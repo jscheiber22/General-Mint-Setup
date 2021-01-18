@@ -12,7 +12,7 @@ echo ""
 echo "SETTING UP FUN DIRECTORIES :)"
 echo ""
 
-mkdir /home/%u/Programming
+mkdir /home/%u/Documents/Programming
 
 echo ""
 echo "UPDATING/UPGRADING SYSTEM"
@@ -30,6 +30,7 @@ sudo apt-get -y install git
 sudo apt-get -y upgrade python3
 sudo apt-get -y install python3-pip
 sudo apt-get -y install python3-tk
+sudo apt-get -y install ncdu
 
 echo ""
 echo "INSTALLING PIP PACKAGES"
@@ -38,10 +39,15 @@ echo ""
 sudo python3 -m pip install selenium
 sudo python3 -m pip install webdriver_manager
 sudo python3 -m pip install bs4
-
+sudo python3 -m pip install pandas
 
 echo ""
 echo "Now sign in to firefox >:("
 echo ""
 
 firefox https://accounts.firefox.com/signin?context=fx_desktop_v3&entrypoint=fxa_app_menu&action=email&service=sync %u
+
+echo ""
+echo "AND CHROME :)"
+echo ""
+firefox https://www.google.com/chrome/
