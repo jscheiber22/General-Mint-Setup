@@ -19,19 +19,20 @@ echo "UPDATING/UPGRADING SYSTEM (and adding qbit repo)"
 echo ""
 
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
-sudo apt -y update
-sudo apt -y upgrade
+sudo apt update -y
+sudo apt upgrade -y
 
 
 echo ""
 echo "INSTALLING SYSTEM APPLICATIONS"
 echo ""
 
-sudo apt -y install git
-sudo apt -y upgrade python3
-sudo apt -y install python3-pip
-sudo apt -y install python3-tk
-sudo apt -y install ncdu
+sudo apt install -y git
+sudo apt upgrade -y python3
+sudo apt install -y python3-pip
+sudo apt install -y python3-tk
+sudo apt install -y ncdu
+sudo apt install -y qbittorrent
 
 echo ""
 echo "INSTALLING PIP PACKAGES"
