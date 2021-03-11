@@ -18,7 +18,7 @@ echo ""
 echo "UPDATING/UPGRADING SYSTEM (and adding qbit repo)"
 echo ""
 
-sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
+#sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
 sudo apt update -y
 sudo apt upgrade -y
 
@@ -32,7 +32,7 @@ sudo apt upgrade -y python3
 sudo apt install -y python3-pip
 sudo apt install -y python3-tk
 sudo apt install -y ncdu
-sudo apt install -y qbittorrent
+#sudo apt install -y qbittorrent
 
 echo ""
 echo "INSTALLING PIP PACKAGES"
@@ -44,6 +44,7 @@ sudo python3 -m pip install bs4
 sudo python3 -m pip install pandas
 sudo python3 -m pip install undetected_chromedriver
 sudo python3 -m pip install opencv-python
+sudo python3 -m pip install dash
 
 echo ""
 echo "Now sign in to firefox >:("
