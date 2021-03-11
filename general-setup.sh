@@ -32,7 +32,8 @@ sudo apt upgrade -y python3
 sudo apt install -y python3-pip
 sudo apt install -y python3-tk
 sudo apt install -y ncdu
-#sudo apt install -y qbittorrent
+sudo apt install -y qbittorrent
+sudo apt install -y tesseract-ocr
 
 echo ""
 echo "INSTALLING PIP PACKAGES"
@@ -45,6 +46,7 @@ sudo python3 -m pip install pandas
 sudo python3 -m pip install undetected_chromedriver
 sudo python3 -m pip install opencv-python
 sudo python3 -m pip install dash
+sudo python3 -m pip install pytesseract
 
 echo ""
 echo "Now sign in to firefox >:("
